@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn {
+        @apply shadow rounded border px-3 py-2 text-sm hover:shadow-lg transition-all;
+    }
+
+    .btn-primary {
+        @apply bg-orange-600 border-orange-600 text-white 
+               hover:bg-orange-500 hover:border-orange-500;
+    }
+
+    .btn-outline {
+        @apply border-gray-300 hover:text-orange-500 hover:shadow;
+    }
+
+    .btn-big {
+        @apply px-4 py-3 text-lg hover:shadow-xl;
+    }
+
+    .btn-small {
+        @apply px-3 py-2 text-xs;
+    }
+}
+
+html,
+body {
+    @apply h-full;
+}
