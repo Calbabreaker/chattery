@@ -9,6 +9,7 @@ specifiers:
   svelte: ^3.44.0
   svelte-check: ^2.2.6
   svelte-icons: ^2.1.0
+  svelte-markdown: ^0.2.1
   svelte-preprocess: ^4.9.4
   tailwindcss: ^3.0.9
   tslib: ^2.3.1
@@ -16,13 +17,14 @@ specifiers:
 
 devDependencies:
   '@sveltejs/adapter-static': 1.0.0-next.24
-  '@sveltejs/kit': 1.0.0-next.216_svelte@3.44.3
+  '@sveltejs/kit': 1.0.0-next.218_svelte@3.44.3
   autoprefixer: 10.4.1_postcss@8.4.5
   firebase: 9.6.1
   postcss: 8.4.5
   svelte: 3.44.3
   svelte-check: 2.2.11_postcss@8.4.5+svelte@3.44.3
   svelte-icons: 2.1.0
+  svelte-markdown: 0.2.1_svelte@3.44.3
   svelte-preprocess: 4.10.1_a77feb17e2d98801e15b65bd7ff1b1f2
   tailwindcss: 3.0.9_cefe482e8d38053bbf3d5815e0c551b3
   tslib: 2.3.1
@@ -587,8 +589,8 @@ packages:
       tiny-glob: 0.2.9
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.216_svelte@3.44.3:
-    resolution: {integrity: sha512-FKg7PPlymsZ2aU8DteY1BH217M2dIAgfWzm8OVqazQn2uLbw25WbVqSJ5KdgW83mLYoxSWUNPrJX3TJNEG6jVg==}
+  /@sveltejs/kit/1.0.0-next.218_svelte@3.44.3:
+    resolution: {integrity: sha512-reimVgWaFq0qIvxkKnWE4nq35JFd6yQ6Lkge+o3WkX3hV8CAtrLbSAzFaEIUu5Ph09gJkl2PnqQa32WVDaeBZg==}
     engines: {node: '>=14.13'}
     hasBin: true
     peerDependencies:
@@ -631,6 +633,10 @@ packages:
 
   /@types/long/4.0.1:
     resolution: {integrity: sha512-5tXH6Bx/kNGd3MgffdmP4dy2Z+G4eaXw0SE81Tq3BNadtnMR5/ySMzX4SLEzHJzSmPNn4HIdpQsBvXMUykr58w==}
+    dev: true
+
+  /@types/marked/4.0.1:
+    resolution: {integrity: sha512-ZigEmCWdNUU7IjZEuQ/iaimYdDHWHfTe3kg8ORfKjyGYd9RWumPoOJRQXB0bO+XLkNwzCthW3wUIQtANaEZ1ag==}
     dev: true
 
   /@types/node/17.0.7:
@@ -1361,6 +1367,12 @@ packages:
       sourcemap-codec: 1.4.8
     dev: true
 
+  /marked/4.0.9:
+    resolution: {integrity: sha512-HmoFvQwFLxNESeGupeOC+6CLb5WzcCWQmqvVetsErmrI3vrZ6gBumty5IP0ynLPR0zYSoVY7ITC1GffsYIGkog==}
+    engines: {node: '>= 12'}
+    hasBin: true
+    dev: true
+
   /merge2/1.4.1:
     resolution: {integrity: sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg==}
     engines: {node: '>= 8'}
@@ -1816,6 +1828,16 @@ packages:
 
   /svelte-icons/2.1.0:
     resolution: {integrity: sha512-rHPQjweEc9fGSnvM0/4gA3pDHwyZyYsC5KhttCZRhSMJfLttJST5Uq0B16Czhw+HQ+HbSOk8kLigMlPs7gZtfg==}
+    dev: true
+
+  /svelte-markdown/0.2.1_svelte@3.44.3:
+    resolution: {integrity: sha512-3oj7kYFPaXAm5ARGuSfMjkmsF/iD6LxXqgMsAC1//PbO+tbx/sT30cXO1imAXL7w0M6hRr4o5CF95pRSZLxjjg==}
+    peerDependencies:
+      svelte: ^3.0.0
+    dependencies:
+      '@types/marked': 4.0.1
+      marked: 4.0.9
+      svelte: 3.44.3
     dev: true
 
   /svelte-preprocess/4.10.1_a77feb17e2d98801e15b65bd7ff1b1f2:

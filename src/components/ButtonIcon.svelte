@@ -1,10 +1,15 @@
 <script lang="ts">
-    export let text: string;
+    import type { SvelteComponent } from "svelte";
+
+    export let text = "";
+    export let icon: typeof SvelteComponent;
 </script>
 
-<button class={`btn flex justify-center ${$$props.class}`}>
+<button on:click class={`btn flex justify-center ${$$props.class}`}>
     <div class="w-4 my-auto">
-        <slot />
+        <svelte:component this={icon} />
     </div>
-    <span class="mx-2 my-auto">{text}</span>
+    {#if text}
+        <span class="mx-2 my-auto">{text}</span>
+    {/if}
 </button>

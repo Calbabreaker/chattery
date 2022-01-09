@@ -4,20 +4,20 @@
 
 @layer components {
     .btn {
-        @apply shadow rounded border px-3 py-2 text-sm hover:shadow-lg transition-all;
+        @apply shadow rounded border px-3 py-2 text-sm focus:ring ring-blue-300;
     }
 
     .btn-primary {
-        @apply bg-orange-600 border-orange-600 text-white 
-               hover:bg-orange-500 hover:border-orange-500;
+        @apply bg-orange-500 border-orange-500 text-white 
+               hover:bg-orange-600 hover:border-orange-600;
     }
 
     .btn-outline {
-        @apply border-gray-300 hover:text-orange-500 hover:shadow;
+        @apply bg-white border-gray-300 hover:text-orange-500;
     }
 
     .btn-big {
-        @apply px-4 py-3 text-lg hover:shadow-xl;
+        @apply px-4 py-3 text-lg;
     }
 
     .btn-small {
